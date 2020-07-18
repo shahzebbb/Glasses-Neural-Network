@@ -16,6 +16,7 @@ Here is a list of the libraries I've used in the project:
  7. matplotlib
 
 # DATA USED FOR TRAINING AND EVALUATING THE MODEL:
+I have used the MeGlass dataset. The dataset is available here: https://github.com/cleardusk/MeGlass
 
 # DESCRIPTION OF FILES AND FOLDERS:
 The project contains 3 main python files:
@@ -28,3 +29,7 @@ The project also contains many folder:
  2. glasses_array_data: This folder also contains our entire dataset except that the dataset has been converted to array form (.npy) and can be used by our neural network. It also contains 'training_data_label.npy' and 'testing_data_label.npy' which contains the labels for the arrays (whether the array represents an image in whcih the person is wearing glasses or not).
  3. glasse_neural_network: This folder contains a model of our neural_network that I trained preivously. It has a an accuracy of around 92% on our test data.
  
+ # RESULTS AND ISSUES WITH OUR NEURAL NETWORK
+ The neural network has an accuracy rating of 92% on our testing data. While this is a very high percentage, the model does run into some errors which I have listed below:
+ 1. When training the neural network, the accuracy of the model randomly falls down and gets stuck at 0.5140 and does not go back up. This occurence seems essentially random as sometimes the accuracy goes as high as 0.93 but at times falls down at 0.5140. To solve this I repeated the training multiple times to get a better accuracy.
+ 2. I tested the neural network with my images of myself to see how accurate it was. After inputting around 50 images, I came to the conclusion that the neural network will only detect if you're wearing glasses if the glasses are at the centre of the image. Otherwise it will say you are not wearing glasses. This is probably because of the dataset I've used and the fact that all the people wearing glasses are usually in the middle of the image.
