@@ -7,8 +7,8 @@ You input an image inside the neural network and it will output whether or not t
 
 # LIBRARIES I'VE USED:
 Here is a list of the libraries I've used in the project:
- 1. OS
- 2. Numpy
+ 1. os
+ 2. numpy
  3. cv2
  4. tqdm
  5. random
