@@ -1,7 +1,7 @@
 # Glasses-Neural-Network
 
 # INTRODUCTION
-This is my first machine learning project that I have built.
+This is my first machine learning project.
 This project- Glasses Neural Netowrk - creates a neural network which can detect if a person inside an image is wearing glasses or not.
 You input an image inside the neural network and it will output whether or not the person is wearing glasses. (0 means no glasses and 1 means the person is wearing glasses)
 
